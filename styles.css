@@ -1,0 +1,82 @@
+/*Style-----------------------------------*/
+
+body {
+  background: grey;
+  font-size: 16px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin: 0;
+}
+
+a {
+  color: crimson;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+
+/* Layout
+------------------------------------------*/
+
+header,
+.container,
+footer {
+  margin: 0 auto;
+  width: 88%;
+  max-width: 1080px;
+}
+
+.wrapper {
+  padding: 1em 0;
+  background: #ffffff;
+}
+
+
+/* Navigation
+------------------------------------------*/
+
+nav {
+  width: 88%;
+  margin: auto;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  margin-left: 6em;
+  display: inline-block;
+  /*display: flex;*/
+}
+
+nav ul li {
+  padding: 1em;
+  margin-right: .5em;
+}
+
+nav ul li a {
+  padding: .5em 1em;
+  background: #cccccc;
+  border-radius: 15px;
+  transition: 1s;
+}
+
+nav ul li a:hover {
+  background: pink;
+}
+
+
+/* Media Quaries
+------------------------------------------*/
+
+@media screen and (min-width: 48em) {
+  /*48em 768px / 16*/
+  h1 {
+    font-size: 3em;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
